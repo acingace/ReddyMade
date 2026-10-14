@@ -4,8 +4,8 @@ import faithful3Img from '../assets/images/faithful_reddymade_3_elder_1791616616
 import faithful4Img from '../assets/images/faithful_reddymade_4_cart_1791616627088.jpg';
 import faithful5Img from '../assets/images/faithful_reddymade_5_cove_vivid_1791616637679.jpg';
 import faithful6Img from '../assets/images/faithful_reddymade_6_diptych_1791616646958.jpg';
-import faithful7Img from '../assets/images/faithful_reddymade_7_coconuts_1791616656563.jpg';
-import faithful8Img from '../assets/images/faithful_reddymade_8_cove_washed_1791616666643.jpg';
+import faithful7Img from '../assets/images/faithful_reddymade_7_coconuts_1791616656563.jpeg';
+import faithful8Img from '../assets/images/faithful_reddymade_8_cove_washed_1791616666643.jpeg';
 
 export interface ArtworkItem {
   id: string;
