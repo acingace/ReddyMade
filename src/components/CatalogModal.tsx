@@ -423,6 +423,8 @@ export const CatalogModal: React.FC<CatalogModalProps> = ({
                         Tonal
                       </button>
                     </div>
+                  </div>
+                </div>
 
                 {/* Quick 8-Plate Thumbnails Selector */}
                 <div className="flex items-center gap-2 overflow-x-auto pb-2 pt-1">
@@ -598,3 +600,8 @@ export const CatalogModal: React.FC<CatalogModalProps> = ({
               </blockquote>
             </div>
           )}
+        </div>
+      </div>
+    </div>
+  );
+};
