@@ -146,20 +146,6 @@ export const CatalogModal: React.FC<CatalogModalProps> = ({
               >
                 Artist Monograph
               </button>
-              <button
-                onClick={() => {
-                  setActiveTab('download-code');
-                  setIsFullscreenPlate(false);
-                }}
-                className={`px-2.5 sm:px-3 py-1.5 text-xs font-medium rounded-md transition-colors whitespace-nowrap shrink-0 flex items-center gap-1 ${
-                  activeTab === 'download-code'
-                    ? 'bg-[#1C1917] text-[#FBF9F5] shadow-xs font-semibold'
-                    : 'text-[#9A3412] hover:text-[#7C2D12]'
-                }`}
-              >
-                <Code className="w-3.5 h-3.5" />
-                <span className="hidden xs:inline">Download</span> Code
-              </button>
             </div>
 
             <button
@@ -423,6 +409,8 @@ export const CatalogModal: React.FC<CatalogModalProps> = ({
                         Tonal
                       </button>
                     </div>
+                  </div>
+                </div>
 
                 {/* Quick 8-Plate Thumbnails Selector */}
                 <div className="flex items-center gap-2 overflow-x-auto pb-2 pt-1">
@@ -598,3 +586,8 @@ export const CatalogModal: React.FC<CatalogModalProps> = ({
               </blockquote>
             </div>
           )}
+        </div>
+      </div>
+    </div>
+  );
+};

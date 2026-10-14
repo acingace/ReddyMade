@@ -52,7 +52,7 @@ export default function App() {
 
   // Catalog Modal state
   const [catalogOpen, setCatalogOpen] = useState(false);
-  const [catalogTab, setCatalogTab] = useState<'collection' | 'inspect' | 'artist' | 'download-code'>('collection');
+  const [catalogTab, setCatalogTab] = useState<'collection' | 'inspect' | 'artist'>('collection');
   const [inspectedArtwork, setInspectedArtwork] = useState<ArtworkItem | null>(null);
 
   // Visitor position for mini-map
@@ -216,16 +216,6 @@ export default function App() {
             Plate Study
           </button>
           <button
-            onClick={() => {
-              setInspectedArtwork(null);
-              setCatalogTab('download-code');
-              setCatalogOpen(true);
-            }}
-            className="hover:text-white hover:underline underline-offset-4 transition-colors whitespace-nowrap shrink-0 text-[#EAB308]"
-          >
-            Download Code
-          </button>
-          <button
             onClick={() => setShowAtmosphereDrawer(!showAtmosphereDrawer)}
             className="hover:text-white hover:underline underline-offset-4 transition-colors whitespace-nowrap shrink-0"
           >
@@ -309,19 +299,6 @@ export default function App() {
               >
                 <span>High-Res Plate Study</span>
                 <Maximize2 className="w-4 h-4 text-[#D6CEBE]" />
-              </button>
-
-              <button
-                onClick={() => {
-                  setInspectedArtwork(null);
-                  setCatalogTab('download-code');
-                  setCatalogOpen(true);
-                  setMobileMenuOpen(false);
-                }}
-                className="w-full text-left py-3 px-4 rounded-xl bg-white/5 hover:bg-white/10 active:bg-white/15 text-base font-serif-display text-[#EAB308] flex items-center justify-between"
-              >
-                <span>Download Source Code</span>
-                <span className="text-xs font-mono-tabular bg-[#EAB308]/20 px-2 py-0.5 rounded text-[#EAB308]">.ZIP</span>
               </button>
 
               <button
