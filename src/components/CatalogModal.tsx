@@ -22,7 +22,7 @@ import { ArtworkItem, REDDYMADE_ARTWORKS } from '../data/artworks';
 
 interface CatalogModalProps {
   isOpen: boolean;
-  initialTab?: 'collection' | 'inspect' | 'artist' | 'download-code';
+  initialTab?: 'collection' | 'inspect' | 'artist' ;
   inspectedArtwork?: ArtworkItem | null;
   onClose: () => void;
   onWalkToArtwork: (art: ArtworkItem) => void;
@@ -35,7 +35,7 @@ export const CatalogModal: React.FC<CatalogModalProps> = ({
   onClose,
   onWalkToArtwork,
 }) => {
-  const [activeTab, setActiveTab] = useState<'collection' | 'inspect' | 'artist' | 'download-code'>(
+  const [activeTab, setActiveTab] = useState<'collection' | 'inspect' | 'artist' >(
     inspectedArtwork ? 'inspect' : initialTab
   );
   const [activePiece, setActivePiece] = useState<ArtworkItem>(
